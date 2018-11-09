@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class XcConfigClientApplication {
+public class ConfigClient {
 
     public static void main(String[] args) {
-        SpringApplication.run(XcConfigClientApplication.class, args);
+        SpringApplication.run(ConfigClient.class, args);
     }
 }
