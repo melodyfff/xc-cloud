@@ -11,8 +11,6 @@
     <description>Demo project for Spring Boot</description>
 
     <modules>
-        <module>xc-config</module>
-        <module>xc-config-client</module>
         <module>xc-eureka</module>
     <module>xc-eureka-provider</module>
   </modules>
