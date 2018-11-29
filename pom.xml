@@ -14,7 +14,10 @@
         <module>xc-config</module>
         <module>xc-config-client</module>
         <module>xc-eureka</module>
-    <module>xc-eureka-provider</module>
+        <module>xc-eureka-provider</module>
+        <module>xc-eureka-provider-2</module>
+        <module>xc-eureka-provider-3</module>
+        <module>xc-ribbon-consumer</module>
   </modules>
 
 

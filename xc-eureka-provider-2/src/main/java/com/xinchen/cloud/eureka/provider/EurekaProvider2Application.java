@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Eureka Provider 服务提供者实例
  * @author xinchen
  * @version 1.0
  * @date 29/11/2018 10:57
@@ -16,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
-public class EurekaProviderApplication {
+public class EurekaProvider2Application {
 
     @Value("${server.port}")
     String port;
@@ -27,7 +26,7 @@ public class EurekaProviderApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaProviderApplication.class, args);
+        SpringApplication.run(EurekaProvider2Application.class, args);
     }
 
 }
