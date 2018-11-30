@@ -1,0 +1,17 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: feigin-consumer
+
+server:
+  port: 9000
+
+
+#  打开断路器
+feign:
+  hystrix:
+    enabled: true

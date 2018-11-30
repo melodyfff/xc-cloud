@@ -19,7 +19,8 @@
         <module>xc-eureka-provider-3</module>
         <module>xc-ribbon-consumer</module>
         <module>xc-ribbon-consumer-hystrix</module>
-        <module>xc-fegin-consumer</module>
+        <module>xc-feign-consumer</module>
+        <module>xc-feign-consumer-hystrix</module>
   </modules>
 
 

@@ -7,9 +7,9 @@
     <artifactId>xc-cloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>xc-fegin-consumer</artifactId>
+  <artifactId>xc-feign-consumer-hystrix</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>xc-fegin-consumer</name>
+  <name>xc-feign-consumer-hystrix</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

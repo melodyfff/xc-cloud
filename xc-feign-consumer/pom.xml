@@ -7,9 +7,9 @@
     <artifactId>xc-cloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>xc-ribbon-consumer-hystrix</artifactId>
+  <artifactId>xc-feign-consumer</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>xc-ribbon-consumer-hystrix</name>
+  <name>xc-feign-consumer</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,13 +25,7 @@
     <!-- 客户端负载均衡 -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-    </dependency>
-    <!--熔断器-->
-    <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-hystrix -->
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
     </dependency>
 
     <dependency>
@@ -42,6 +36,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 </project>
