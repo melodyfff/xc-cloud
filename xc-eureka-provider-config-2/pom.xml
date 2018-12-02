@@ -7,31 +7,36 @@
     <artifactId>xc-cloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>xc-config-server</artifactId>
+  <artifactId>xc-eureka-provider-config-2</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>xc-config-server</name>
+  <name>xc-eureka-provider-config-2</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>
 
-    <!--Spring Cloud Config 集成 Eureka 服务 -->
+    <!--eureka -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
     </dependency>
 
-    <!-- 配置中心 -->
+    <!-- spring cloud config  -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-config-server</artifactId>
+      <artifactId>spring-cloud-config-client</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <scope>test</scope>
     </dependency>
   </dependencies>
+
 </project>
