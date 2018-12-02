@@ -21,6 +21,8 @@
         <module>xc-feign-consumer-hystrix</module>
         <module>xc-zuul</module>
         <module>xc-zuul-filter</module>
+        <module>xc-config-server</module>
+        <module>xc-config-client</module>
   </modules>
 
 
