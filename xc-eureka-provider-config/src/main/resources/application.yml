@@ -16,5 +16,19 @@ spring:
       uri: http://localhost:8888/
 
 
+
+
 server:
   port: 8084
+
+# spring boot 1.5 之前是这样
+# 关闭刷新安全认证
+# management.security.enabled=false
+
+# spring boot 2.0 后 需要暴露actuator的所有端口
+# 发送 POST  http://localhost:8084/actuator/refresh  刷新配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
