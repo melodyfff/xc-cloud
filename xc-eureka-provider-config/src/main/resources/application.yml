@@ -15,6 +15,12 @@ spring:
         service-id: config-server
       uri: http://localhost:8888/
 
+  # 集成 rabbitMQ
+#  rabbitmq:
+#    host:
+#    port:
+#    username:
+#    password:
 
 
 

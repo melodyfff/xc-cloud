@@ -7,25 +7,25 @@
     <artifactId>xc-cloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>xc-eureka-provider-config</artifactId>
+  <artifactId>xc-config-server-bus</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>xc-eureka-provider-config</name>
+  <name>xc-config-server-bus</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>
 
-    <!--eureka -->
+    <!--Spring Cloud Config 集成 Eureka 服务 -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
     </dependency>
 
-    <!-- spring cloud config  -->
+    <!-- 配置中心 -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-config-client</artifactId>
+      <artifactId>spring-cloud-config-server</artifactId>
     </dependency>
 
     <!-- actuator 监控 -->
@@ -34,21 +34,17 @@
       <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
 
-    <!-- rabbitMQ -->
+    <!-- 总线 -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-bus-amqp</artifactId>
     </dependency>
 
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
 
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
+      <scope>test</scope>
     </dependency>
   </dependencies>
-
 </project>
